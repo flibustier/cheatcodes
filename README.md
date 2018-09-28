@@ -1,9 +1,9 @@
 ## Cheatcodes
 The commands you're always looking for, in one place 📝
 
-### Linux
+### Command line
 
-#### Untar
+#### 📦 Untar 
 
 `tar xvzf file.tar.gz` for `.tgz` or `.tar.gz`
 
@@ -13,13 +13,13 @@ The commands you're always looking for, in one place 📝
 
 `tar xvC /var/tmp -f file.tar` for a specific directory
 
-#### Disk usage
+#### 🔎 Disk usage 
 
 `df -h` for the percentage used of all volumes
 
 `du -h --max-depth=1` for the size of the current directory
 
-#### Screen
+#### 📺 Screen 
 
 `screen -S new_session_name` to create a new session
 
@@ -29,15 +29,15 @@ The commands you're always looking for, in one place 📝
 
 > Ctrl + a (release) and then d to detach the process/screen (so it'll continue to run).
 
-#### SSH
+#### 📡 SSH 
 
 `scp user@remote.host:~/file.txt here.txt` to copy `here.txt` to `~/file.txt` on the remote host
 
-### SQL
+### 💉 SQL 
 
 Create database and a new user with all rights on it
 
-```
+```sql
 create database if not exists DATABASE_NAME character set utf8 collate utf8_unicode_ci;
 
 grant all privileges on DATABASE_NAME.* to 'USER_NAME'@'localhost' identified by 'SECRET_PASSWORD';
