@@ -42,3 +42,25 @@ create database if not exists DATABASE_NAME character set utf8 collate utf8_unic
 
 grant all privileges on DATABASE_NAME.* to 'USER_NAME'@'localhost' identified by 'SECRET_PASSWORD';
 ```
+
+### 🍇 GIT
+
+Changing branch base :
+
+```
+(commit 1) - master
+                \-- (commit 2) - (commit 3) - oldBranch
+                                                \-- (commit 4) - (commit 5) - newBranch
+```
+
+To:
+```
+(commit 1) - master
+                |-- (commit 2) - (commit 3) - oldBranch
+                \-- (commit 4) - (commit 5) - newBranch
+```
+
+```
+git checkout newBranch # Just to be clear which branch to be on.
+git rebase --onto master oldBranch newBranch
+```
