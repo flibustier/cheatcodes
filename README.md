@@ -3,6 +3,8 @@ The commands you're always looking for, in one place 📝
 
 ### Command line
 
+`env` to list all environment variables
+
 #### 📦 Untar 
 
 `tar xvzf file.tar.gz` for `.tgz` or `.tar.gz`
@@ -32,6 +34,16 @@ The commands you're always looking for, in one place 📝
 #### 📡 SSH 
 
 `scp user@remote.host:~/file.txt here.txt` to copy `here.txt` to `~/file.txt` on the remote host
+
+#### ⛵ Navigate
+
+`pushd /directory` to put the current directory in a directory stack
+
+`dirs` to list the directory stack
+
+`popd` to go back to the previous directory
+
+`dirs -c` to clear the directory stack
 
 ### 💉 SQL 
 
