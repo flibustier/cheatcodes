@@ -33,7 +33,7 @@ The commands you're always looking for, in one place 📝
 
 #### 📡 SSH 
 
-`scp user@remote.host:~/file.txt here.txt` to copy `here.txt` to `~/file.txt` on the remote host
+`scp ./here.txt user@remote.host:~/file.txt` to copy `here.txt` (in current folder) to `~/file.txt` on the remote host
 
 #### ⛵ Navigate
 
