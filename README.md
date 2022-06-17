@@ -5,6 +5,8 @@ The commands you're always looking for, in one place 📝
 
 `env` to list all environment variables
 
+`sed -i '' '/pattern-to-remove/d' src/**/package.json` to remove all lines with pattern in multiple files
+
 #### 📦 Untar 
 
 `tar xvzf file.tar.gz` for `.tgz` or `.tar.gz`
